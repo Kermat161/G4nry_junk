@@ -97,12 +97,6 @@ end
 if _G.Settings["Low Rendering"] or (_G.Settings.Other and _G.Settings.Other["Low Rendering"]) then
     settings().Rendering.QualityLevel = 1
 end
-game:GetService("StarterGui"):SetCore("SendNotification", {
-    Title = "discord.gg/rips",
-    Text = "Loading FPS Booster...",
-    Duration = math.huge,
-    Button1 = "Okay"
-})
 local Descendants = ReturnDescendants()
 local WaitNumber = 500
 game:GetService("StarterGui"):SetCore("SendNotification", {
@@ -119,10 +113,4 @@ for i, v in pairs(Descendants) do
         WaitNumber = WaitNumber + 500
     end
 end
-game:GetService("StarterGui"):SetCore("SendNotification", {
-    Title = "discord.gg/rips",
-    Text = "FPS Booster Loaded!",
-    Duration = math.huge,
-    Button1 = "Okay"
-})
 game.DescendantAdded:Connect(CheckIfBad)
