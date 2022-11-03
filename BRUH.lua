@@ -79,8 +79,8 @@ local function CheckIfBad(Instance)
                 Instance.Reflectance = 0
             end
         elseif Instance.Parent ~= nil and Instance.Parent.Name == "Ragdolls" then
-                Instance:Destroy()
-            end
+            wait()
+            Instance:Destroy()
         end
     end
 end
