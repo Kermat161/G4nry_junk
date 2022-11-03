@@ -43,6 +43,7 @@ local function ReturnDescendants()
     end
     return Descendants
 end
+--bads
 local function CheckIfBad(Instance)
     if not Instance:IsDescendantOf(Players) and not PartOfCharacter(Instance) then
         if Instance:IsA("DataModelMesh") then
