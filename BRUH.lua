@@ -78,7 +78,7 @@ local function CheckIfBad(Instance)
                 Instance.Material = Enum.Material.Plastic
                 Instance.Reflectance = 0
             end
-        elseif Instance.Parent == "Ragdolls" then
+        elseif Instance.Parent ~= nil and Instance.Parent.Name == "Ragdolls" then
                 Instance:Destroy()
             end
         end
