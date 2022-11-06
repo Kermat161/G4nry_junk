@@ -4,9 +4,9 @@ local localplayer = Players.LocalPlayer;
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/9Strew/roblox/main/proc/jans"))()
 local Esp = loadstring(game:HttpGet("https://raw.githubusercontent.com/9Strew/roblox/main/proc/kiriotesp"))()
-Esp.Enabled = true
+Esp.Enabled = false
 Esp.Tracers = false
-Esp.Boxes = true
+Esp.Boxes = false
 
 local Window = Library:CreateWindow("🧟🎃 Evade", Vector2.new(500, 300), Enum.KeyCode.RightShift)
 local Evade = Window:CreateTab("General")
@@ -22,7 +22,7 @@ local World = Gamee:CreateSector("World", "left")
 
 getgenv().Settings = {
     NoCameraShake = false,
-    Downedplayeresp = true,
+    Downedplayeresp = false,
     Speed = 1450,
     Jump = 3,
     reviveTime = 3,
